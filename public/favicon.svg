@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e14"/>
+      <stop offset="100%" style="stop-color:#1a1f2e"/>
+    </linearGradient>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="50%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#22d3ee"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" rx="20" fill="url(#bgGrad)"/>
+  
+  <!-- Dumbbell design -->
+  <g filter="url(#glow)">
+    <!-- Left weight plates -->
+    <rect x="15" y="35" width="12" height="30" rx="3" fill="url(#mainGrad)"/>
+    <rect x="20" y="40" width="8" height="20" rx="2" fill="url(#accentGrad)" opacity="0.8"/>
+    
+    <!-- Center bar -->
+    <rect x="27" y="45" width="46" height="10" rx="2" fill="url(#mainGrad)"/>
+    
+    <!-- Right weight plates -->
+    <rect x="73" y="35" width="12" height="30" rx="3" fill="url(#mainGrad)"/>
+    <rect x="72" y="40" width="8" height="20" rx="2" fill="url(#accentGrad)" opacity="0.8"/>
+  </g>
+  
+  <!-- Dynamic motion lines -->
+  <g opacity="0.6">
+    <line x1="20" y1="25" x2="30" y2="30" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="70" y1="25" x2="80" y2="30" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="75" x2="30" y2="70" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="70" y1="75" x2="80" y2="70" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- AI indicator dot -->
+  <circle cx="50" cy="50" r="4" fill="url(#accentGrad)">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
