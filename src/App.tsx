@@ -24,11 +24,11 @@ const moduleUrls = {
   workoutGenerator: "https://openai-workout-generator.vercel.app/",
   formAssistant: "https://ai-workout-assistant-ten.vercel.app/",
   exerciseLibrary: "https://library-psi-three.vercel.app/",
-  strengthArena: "https://library-psi-three.vercel.app/",
+  strengthArena: "https://keen-torte-50546a.netlify.app/",
   nutrition: "https://nutrition-ai-lovat.vercel.app/",
   tracker: "https://tracker-lilac-xi.vercel.app/",
   fitmatrix: "https://velvety-arithmetic-6f8aee.netlify.app/",
-  smashCard: "https://velvety-arithmetic-6f8aee.netlify.app/",
+  smashCard: "https://sweet-horse-372fab.netlify.app/",
   fitmap: "https://fitnessmap.vercel.app/",
   yoga: "https://yoga-gold-nu.vercel.app/",
 };
